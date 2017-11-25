@@ -1,12 +1,13 @@
 class Owner
-  @@all = []
+  @@all = {}
   @@count = 0
 
   attr_accessor :name
 
   def initialize(name)
     @name = name
-    @@all << @name
+    @@all[:Owner] << @name.object_id
+    @@all[:name] << @name
     @@count += 1
   end
 
