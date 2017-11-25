@@ -4,6 +4,7 @@ class Owner
   attr_accessor :name, :pets
   attr_reader :species
 
+  #everytime we create a new owner we add them to the list of owners and give them a pet hash to store all there pets
   def initialize(species)
     @species = species
     @@all << self
@@ -26,6 +27,7 @@ class Owner
     "I am a #{species}."
   end
 
+  #When we buy a new pet we create a new pet class and add that pet to the owners pet hash
   def buy_fish(name)
     fish = Fish.new(name)
     pets[:fishes] << fish
