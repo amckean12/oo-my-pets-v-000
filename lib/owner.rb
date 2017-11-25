@@ -9,6 +9,6 @@ class Owner
 
   def species
     @species= "human"
-  end 
+  end
 
 end
