@@ -11,4 +11,9 @@ class Owner
     @@all
   end
 
+  def self.add
+     @@all << @name 
+   end
+    
+
 end
