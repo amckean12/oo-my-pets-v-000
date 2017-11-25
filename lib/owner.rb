@@ -7,11 +7,4 @@ class Owner
     @name = name
     @species = species
   end
-
-  def species(species)
-    @species = species
-  end
-
-
-
 end
