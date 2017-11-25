@@ -6,10 +6,10 @@ class Cat
   end
 
   def mood=(mood)
-    @mood = mood 
-  end 
+    @mood = mood
+  end
   
   def mood
     @mood
-  end  
+  end
 end
