@@ -41,7 +41,7 @@ class Owner
     pets[:cats] << cat
   end
 
-  def walk_dogs(mood)
+  def walk_dogs
     @mood = "happy"
   end
 
