@@ -1,3 +1,7 @@
 class Owner
-  # code goes here
+  @@all = []
+
+  attr_accessor :species, :name
+
+  
 end
