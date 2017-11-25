@@ -6,8 +6,6 @@ class Owner
 
   def initialize(name)
     @name = name
-    @@all[:Owner] << @name.object_id
-    @@all[:name] << @name
     @@count += 1
   end
 
@@ -16,7 +14,7 @@ class Owner
   end
 
   def self.reset_all
-    @@all = []
+    @@all = {}
     @@count = 0
   end
 end
